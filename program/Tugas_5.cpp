@@ -33,7 +33,7 @@ void playDanaSound() {
 }
 
 void kirimNotifikasiDiscord(string message) {
-    string webhook = "https://discord.com/api/webhooks/1378743623050461394/qmi_ZubELDAkIS1YivCOdDMyz8W-YKE3EPTIDgHwVmZ6BJffRjtUJmXx88vU_g5LgR-n";
+    string webhook = "";
     string payload = "curl -H \"Content-Type: application/json\" -X POST -d \"{\\\"content\\\":\\\"" + message + "\\\"}\" \"" + webhook + "\"";
     system(payload.c_str());
 }
